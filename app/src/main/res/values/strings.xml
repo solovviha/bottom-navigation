@@ -4,4 +4,8 @@
     <string name="about">about</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Change">варианты</string>
+    <string name="menu_sleep">сон у детей</string>
+    <string name="youtube_button">музыка на youtube</string>
+    <string name="about_text">Ведь сон ребенка часто непредсказуем - неизвестно, что ожидать каждую ночь. Кроха может плохо спать дневные сны, протестовать перед укладыванием, слишком часто просыпаться ночью и подниматься до 6 утра. Родителям остается гадать, почему так происходит - причин может быть множество.</string>
 </resources>

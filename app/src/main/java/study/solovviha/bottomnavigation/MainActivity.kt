@@ -2,6 +2,7 @@ package study.solovviha.bottomnavigation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationBarMenuView
 
@@ -18,17 +19,11 @@ class MainActivity : AppCompatActivity() {
             when(item.itemId){
                 R.id.menu -> {
                     val menuFragment = MenuFragment()
-                    supportFragmentManager
-                        .beginTransaction()
-                        .replace(R.id.fragment_container,menuFragment)
-                        .commit()
+                    replaceFragment(menuFragment)
                 }
                 R.id.about ->{
                     val aboutFragment = AboutFragment()
-                    supportFragmentManager
-                        .beginTransaction()
-                        .replace(R.id.fragment_container, aboutFragment)
-                        .commit()
+                    replaceFragment(aboutFragment)
 
                 }
             }
@@ -37,6 +32,14 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
+
+    }
+
+    private fun replaceFragment(fragment: Fragment){
+       supportFragmentManager
+           .beginTransaction()
+           .replace(R.id.fragment_container, fragment)
+           .commit()
 
     }
 }
